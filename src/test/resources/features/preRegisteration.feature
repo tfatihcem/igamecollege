@@ -1,7 +1,7 @@
 @smoke
 Feature: Pre-Registration
 
-  Scenario: Verify Pre-registration and reaching out the form
+  Scenario: IGC-01 Verify Pre-registration and reaching out the form
     Given the user is on the home page
     When the user enters Pre Registration Button
     And the user clicks on Apply Now Button
@@ -13,7 +13,7 @@ Feature: Pre-Registration
       When the user enters the following Parents Guardian credentials
         |firstname |John                     |
         |lastname  |Smith                    |
-        |email     |wwww.google.com  |
+        |email     |burakomertahir  |
         |phone     |12343454567              |
         |birthdate |1970/09/28               |
         |address   |Frankfurter Strasse      |

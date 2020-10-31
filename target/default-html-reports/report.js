@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/preRegisteration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/homePage.feature");
 formatter.feature({
-  "name": "Pre-Registration",
+  "name": "Home page functions",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@igame-wip"
     }
   ]
 });
 formatter.scenario({
-  "name": "Verify Pre-registration and reaching out the form",
+  "name": "IGC-02 Verify that the ser can access essential links inside \"Home Page\" under the International Game College opening page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@igame-wip"
     }
   ]
 });
@@ -33,185 +33,215 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters Pre Registration Button",
+  "name": "the user clicks on Programs",
   "keyword": "When "
 });
 formatter.match({
-  "location": "PreRegistrationStepDefs.the_user_enters_Pre_Registration_Button()"
+  "location": "HomePage_StepDefs.the_user_clicks_on_Programs()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on Apply Now Button",
+  "name": "the user goes programs page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_goes_programs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "when the user clicks on Online Ed",
   "keyword": "And "
 });
 formatter.match({
-  "location": "PreRegistrationStepDefs.the_user_clicks_on_Apply_Now_Button()"
+  "location": "HomePage_StepDefs.when_the_user_clicks_on_Online_Ed()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the page is Application form for candidates",
+  "name": "the user goes Online Ed page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PreRegistrationStepDefs.the_page_is_Application_form_for_candidates()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "The user fills out the Parents / Guardians form",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on Apply Now Button",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "PreRegistrationStepDefs.the_user_clicks_on_Apply_Now_Button()"
+  "location": "HomePage_StepDefs.the_user_goes_Online_Ed_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters the following Parents Guardian credentials",
-  "rows": [
-    {
-      "cells": [
-        "firstname",
-        "John"
-      ]
-    },
-    {
-      "cells": [
-        "lastname",
-        "Smith"
-      ]
-    },
-    {
-      "cells": [
-        "email",
-        "wwww.google.com"
-      ]
-    },
-    {
-      "cells": [
-        "phone",
-        "12343454567"
-      ]
-    },
-    {
-      "cells": [
-        "birthdate",
-        "1970/09/28"
-      ]
-    },
-    {
-      "cells": [
-        "address",
-        "Frankfurter Strasse"
-      ]
-    },
-    {
-      "cells": [
-        "city",
-        "Frankfurt"
-      ]
-    },
-    {
-      "cells": [
-        "state",
-        "Hessen"
-      ]
-    },
-    {
-      "cells": [
-        "zipcode",
-        "60528"
-      ]
-    }
-  ],
+  "name": "the user clicks on Language Ed",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AdmissionStepDefs.the_user_enters_the_following_Parents_Guardian_credentials(String,String\u003e)"
+  "location": "HomePage_StepDefs.the_user_clicks_on_Language_Ed()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: It is not a valid email address\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat com.college.step_definitions.AdmissionStepDefs.the_user_enters_the_following_Parents_Guardian_credentials(AdmissionStepDefs.java:40)\n\tat ✽.the user enters the following Parents Guardian credentials(file:src/test/resources/features/preRegisteration.feature:13)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user continue",
+  "name": "the user goes Language Ed page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AdmissionStepDefs.the_user_continue()"
+  "location": "HomePage_StepDefs.the_user_goes_Language_Ed_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user enters the following Applicant Information credentials",
-  "rows": [
-    {
-      "cells": [
-        "firstname",
-        "Jessica"
-      ]
-    },
-    {
-      "cells": [
-        "lastname",
-        "Anna"
-      ]
-    },
-    {
-      "cells": [
-        "email",
-        "test@test.com"
-      ]
-    },
-    {
-      "cells": [
-        "birthdate",
-        "2005/09/28"
-      ]
-    }
-  ],
+  "name": "when the user clicks on Grants",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.when_the_user_clicks_on_Grants()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user has the access to Scholarship Program and Apply For Scholarship",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_has_the_access_to_Scholarship_Program_and_Apply_For_Scholarship()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "when the user clicks on Social Life in College",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.when_the_user_clicks_on_Social_Life_in_College()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user has access to the social life page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_has_access_to_the_social_life_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user has the access to the Carreer development page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_has_the_access_to_the_Carreer_development_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on to the pre registration Form",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AdmissionStepDefs.the_user_enters_the_following_Applicant_Information_credentials(String,String\u003e)"
+  "location": "HomePage_StepDefs.the_user_clicks_on_to_the_pre_registration_Form()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user goes to Application Fee",
+  "name": "the user enters Apply For button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AdmissionStepDefs.the_user_goes_to_Application_Fee()"
+  "location": "HomePage_StepDefs.the_user_enters_Apply_For_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
+formatter.step({
+  "name": "when the user clicks on Activities",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.when_the_user_clicks_on_Activities()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user goes Activities page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_goes_Activities_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "when the user clicks on Frequently Asked Questions",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.when_the_user_clicks_on_Frequently_Asked_Questions()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user sees the questions",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_sees_the_questions()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user Request Information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_Request_Information()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user fill out and submit the Contact Form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_fill_out_and_submit_the_Contact_Form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user sees Announcement on the HomePage",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_sees_Announcement_on_the_HomePage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user sees Instagram on the HomePage",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomePage_StepDefs.the_user_sees_Instagram_on_the_HomePage()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
